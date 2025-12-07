@@ -1,0 +1,15 @@
+def hitung_total(harga, jumlah, diskon=0):
+    total = harga * jumlah
+    total -= total * (diskon / 100)
+    return total
+
+# Get user input (using predefined values for demonstration)
+harga = 50000  # Example value
+jumlah = 3     # Example value
+diskon = 10    # Example value
+
+# Calculate total using the function
+total_belanja = hitung_total(harga, jumlah, diskon)
+
+# Print the result matching the sample output format
+print(f"Total belanja = {int(total_belanja)}")
